@@ -306,7 +306,7 @@ header {
   min-height: 100vh;
   /* background-image: url("./src/images/Bk.png") center/cover no-repeat; */
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(63, 208, 212, 0.5)),
-    url(./src/images/Bk.png) center/cover no-repeat;
+    url(./src/images/Bk.png);
 }
 .banner {
   min-height: 100vh;
@@ -340,7 +340,7 @@ header {
 #about,
 #services,
 #tours {
-  height: 80vh;
+  min-height: 80vh;
 }
 #services {
   background: var(--clr-white);
@@ -389,4 +389,33 @@ footer p {
   100% {
     transform: scale(1);
   }
+}
+
+article {
+  display: grid;
+  place-items: center;
+  margin: 10px auto;
+  background: rgb(0, 242, 255, 0.1);
+}
+article ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 40px;
+}
+/* article ul li:nth-child(2) { */
+article ul li {
+  /* display: flex; */
+  width: 400px;
+  padding: 5px;
+  border-radius: 7px;
+  background: rgb(181, 250, 252, 0.9);
+  box-shadow: 0px 4px 5px rgb(0, 0, 0, 0.5);
+}
+article ul li p:hover {
+  transition: 2s ease;
+  color: rgb(0, 2, 255, 0.5);
+}
+article ul li img {
+  min-width: 100px;
 }

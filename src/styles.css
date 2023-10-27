@@ -422,13 +422,37 @@ article ul li p:hover {
 }
 article ul li img {
   min-width: 100px;
+  object-fit: cover;
+}
+.title ul li {
+  text-align: center;
+  /* margin: 10px; */
+  width: 100%;
+  background: rgb(167, 243, 249);
+  font-size: 20px;
+}
+.video-container {
+  width: 100%;
 }
 @media (max-width: 820px) {
+  .section {
+    padding-bottom: 5px;
+  }
+  article {
+    margin: 0;
+  }
   article ul {
     grid-template-columns: 1fr;
     padding: 10px;
+    margin: 0;
   }
   article ul li {
     width: 100%;
+    margin: 0;
+  }
+  .padding-service li {
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
   }
 }

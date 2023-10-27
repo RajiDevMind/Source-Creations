@@ -25,11 +25,8 @@ const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
 
 window.addEventListener("scroll", function () {
-  //   console.log(window.scrollY);
-  //   const scrollHeight = window.pageYOffset;
   const scrollHeight = window.scrollY;
   const navHeight = navbar.getBoundingClientRect().height;
-  //   console.log(navHeight);
 
   // display fixed navbar
   if (scrollHeight > navHeight) {
